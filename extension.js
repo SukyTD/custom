@@ -94,7 +94,7 @@
       filterChat: true,
       etaRestriction: false,
       welcome: true,
-      opLink: "goo.gl/eFIs6u",
+      opLink: "https://goo.gl/eFIs6u",
       rulesLink: null,
       themeLink: null,
       fbLink: "https://www.facebook.com/trapdacicc & https://www.facebook.com/ravenueofficial/",
