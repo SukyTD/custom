@@ -111,7 +111,7 @@
       rulesLink: null,
       themeLink: "Genres allowed: Trap, House, Chill, Electro, Rap, and Bass music.",
       fbLink: "https://www.facebook.com/trapdacicc & https://www.facebook.com/ravenueofficial/",
-      youtubeLink: "https://www.youtube.com/channel/UCv0Jd36ByQYSnqVleBINATA & https://www.youtube.com/channel/UCZIElhs4ViHnLyk5R6ii2wQ",
+      youtubeLink: "https://youtube.com/ravenue & https://youtube.com/trapdacic",
       website: "www.alltrapdacic.com",
       intervalMessages: [],
       messageInterval: 5,
