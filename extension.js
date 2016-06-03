@@ -59,7 +59,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "Rave Bot",
+      botName: "Dacic Bot",
       language: "english",
       chatLink: "https://rawgit.com/SukyTD/basicbot/master/lang/en.json",
       scriptLink: "https://rawgit.com/SukyTD/basicbot/master/basicBot.js",
