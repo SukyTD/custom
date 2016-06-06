@@ -32,7 +32,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("If you want bouncer you need to fill up this application: https://goo.gl/viRAAi");
+                    API.sendChat("If you wanna be a bouncer you need to fill up this application: https://goo.gl/viRAAi");
                     
             }
         }
