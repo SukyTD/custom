@@ -24,20 +24,6 @@
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
         
-        bot.commands.bouncerCommand = {
-            commands: 'bouncer',
-            rank: 'user', 
-            type: 'exact',
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("If you wanna be a bouncer you need to fill up this application: https://goo.gl/viRAAi");
-                    
-            }
-        }
-    };
-        
         bot.commands.rcsCommand = {
             command: 'rcs',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
@@ -52,15 +38,15 @@
         };
 
         // Example code for a bot command:
-        bot.commands.baconCommand = {
-          command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+        bot.commands.bouncerCommand = {
+          command: 'bouncer',  // The command to be called. With the standard command literal this would be: !bacon
           rank: 'user', // Minimum user permission to use the command
           type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
           functionality: function (chat, cmd) {
             if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
             if (!bot.commands.executable(this.rank, chat)) return void (0);
             else {
-              API.sendChat("/me Bacon!!!");
+              API.sendChat("/me If you wanna be a bouncer you need to fill up this application: https://goo.gl/viRAAi");
             }
           }
         };
