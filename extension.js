@@ -88,7 +88,7 @@
       maximumAfk: 120,
       afkRemoval: false,
       maximumDc: 60,
-      bouncerPlus: false,
+      bouncerPlus: true,
       blacklistEnabled: true,
       lockdownEnabled: false,
       lockGuard: false,
