@@ -232,7 +232,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Rave Bot",
         language: "english",
-        chatLink: "https://rawgit.com/KGTHREAT/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/SukyTD/basicBot/master/lang/en.json",
         maximumAfk: 70,
         afkRemoval: false,
         maximumDc: 20,
@@ -279,13 +279,13 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/KGTHREAT/mycustombasicbot3/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/SukyTD/custom/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/SukyTD/custom/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/SukyTD/custom/master/blacklists/BANNEDlist.json"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript('https://rawgit.com/KGTHREAT/basicBot/master/basicBot.js', extend);
+    $.getScript('https://rawgit.com/SukyTD/basicBot/master/basicBot.js', extend);
 
 }).call(this);
