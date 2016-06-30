@@ -43,35 +43,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    var locked = bot.getLocked();
-                    if(locked) {
-                        $.ajax({
-                        type: 'PUT', 
-                        url: 'https://plug.dj/_/booth/lock', 
-                        contentType: 'application/json',
-                        data: JSON.stringify({
-                            isLocked: false,
-                            removeAllDJs: false })
-                        });
-                    }   
-                    $.ajax({
-                    type: 'PUT', 
-                    url: 'https://plug.dj/_/booth/lock', 
-                    contentType: 'application/json',
-                    data: JSON.stringify({
-                        isLocked: true,
-                        removeAllDJs: true })
-                    });
-                    if(!locked) {
-                        $.ajax({
-                        type: 'PUT', 
-                        url: 'https://plug.dj/_/booth/lock', 
-                        contentType: 'application/json',
-                        data: JSON.stringify({
-                            isLocked: false,
-                            removeAllDJs: false })
-                        });
-                    }
+                   API.moderateLockWaitList(true, true) 
                 }
             }
         };
