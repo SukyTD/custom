@@ -71,8 +71,8 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
       botName: "Karl Bot",
       language: "english",
-      chatLink: "https://rawgit.com/SukyTD/basicbot/master/lang/en.json",
-      scriptLink: "https://rawgit.com/SukyTD/basicbot/master/basicBot.js",
+      chatLink: "https://raw.githubusercontent.com/SukyTD/basicbot/master/lang/en.json",
+      scriptLink: "https://raw.githubusercontent.com/SukyTD/basicbot/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
@@ -128,13 +128,13 @@
       songstats: false,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://raw.githubusercontent.com/basicBot/custom/master/blacklists/NSFWlist.json",
+        OP: "https://raw.githubusercontent.com/basicBot/custom/master/blacklists/OPlist.json",
+        BANNED: "https://raw.githubusercontent.com/basicBot/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/SukyTD/basicbot/master/basicBot.js", extend);
+    $.getScript("https://raw.githubusercontent.com/SukyTD/basicbot/master/basicBot.js", extend);
 
 }).call(this);
